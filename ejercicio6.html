@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+        for(i=1;i<=5;i++);
+        {
+            const aviso=prompt("Ingrese la estatura de la persona"+i);
+            estatura=parseFloat(aviso);
+            
+            while( estatura==0);
+            {
+                              
+                    const aviso=prompt("Ingrese un valor válido. Ingrese la estatura de la persona"+i);
+                    estatura=parseFloat(aviso);
+            
+                    
+            }
+
+            if(estatura>1.70 || estatura>170)
+            {
+                const nota=document.createElement("p");
+                document.body.append(nota);
+                nota.innerText="Es de estatura promedio";
+            }
+            else 
+            {
+                
+                if(estatura>1.75 || estatura>175)
+                {
+                    const nota=document.createElement("p");
+                    document.body.append(nota);
+                    nota.innerText="Es de estatura alta";
+                }
+                else
+                {
+                    const nota=document.createElement("p");
+                    document.body.append(nota);
+                    nota.innerText="Es de estatura baja";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
